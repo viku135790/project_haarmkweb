@@ -1,0 +1,56 @@
+.contact-us-mid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact-us-mid1{
+    font-size: 4rem;
+    text-align: center;
+   color: rgb(53, 52, 52);
+}
+.contact-us-mid2{
+    font-size: 2rem;
+    text-align: center;
+    /* border: 1px solid green; */
+    padding: 2rem;
+    color: grey;
+}
+
+@media only screen and (min-width: 414px) and (max-width: 768px) {
+   
+    .contact-us-mid1{
+        /* color: peru; */
+        font-size: 3rem;
+        text-align: center;
+    }
+    .contact-us-mid2{
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 2rem;
+        /* border: 1px solid green; */
+        
+    }
+    
+
+}
+
+  @media only screen and (max-width: 414px) {
+
+    .contact-us-mid1{
+        /* color: blueviolet; */
+        font-size: 2rem;
+        text-align: center;
+    }
+    .contact-us-mid2{
+        /* color: palevioletred; */
+        font-size: 1rem;
+        text-align: center;
+        /* border: 1px solid green; */
+        padding: 2rem;
+        
+        
+    }
+    
+    
+}

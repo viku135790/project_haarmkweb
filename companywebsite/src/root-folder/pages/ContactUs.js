@@ -1,9 +1,10 @@
 import React from 'react'
-import Navbar from '../allcomponents/reusable_componants/Navbar'
+import Contact from '../allcomponents/contact/contact';
+
 const ContactUs = () => {
   return (
-    <div className='contactus-main-container'>
-      <Navbar />
+    <div>
+        <Contact/>
     </div>
   )
 }
