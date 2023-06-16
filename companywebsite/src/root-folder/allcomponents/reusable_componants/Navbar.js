@@ -1,5 +1,6 @@
 import React, { useRef } from 'react'
-import { FaTimes, FaBars } from "react-icons/fa";
+import { NavLink } from 'react-router-dom';
+import { FaTimes, FaBars, FaGlobe } from "react-icons/fa";
 import "./Navbar.css"
 
 const Navbar = () => {
@@ -12,22 +13,38 @@ const Navbar = () => {
   };
 
   return (
-    <header>
-      <h3>LOGO</h3>
+    <header className='nav-main-class-header'>
+      <h3>HAARMK</h3>
       <nav ref={navRef}>
-        <a href="/#">Home</a>
-        <a href="/#">My work</a>
-        <a href="/#">Blog</a>
-        <a href="/#">About me</a>
-        <a href="/#">Blog</a>
-        <a href="/#">About me</a>
+        <NavLink to="/">
+          <a href="" className='nav-link-text'>Home</a>
+        </NavLink>
+        <NavLink to="/AboutUs">
+          <a href="" className='nav-link-text'>About Us</a>
+        </NavLink>
+        <NavLink to="/AboutUs">
+          <a href="" className='nav-link-text'>Services</a>
+        </NavLink>
+        <NavLink to="">
+          <a href="" className='nav-link-text'>Portfolio</a>
+        </NavLink>
+        <NavLink to="">
+          <a href="" className='nav-link-text'>Career</a>
+        </NavLink>
+        <NavLink to="">
+          <a href="" className='nav-link-text'>Contact Us</a>
+        </NavLink>
         <button className="nav-btn nav-close-btn" onClick={showNavbar}>
           <FaTimes />
         </button>
       </nav>
-      <button
-        className="nav-btn"
-        onClick={showNavbar}>
+      <div className="account-icon">
+        <div className='icon-image'>
+          <FaGlobe />
+        </div>
+        <div className='Welcome-name'>Hello World</div>
+      </div>
+      <button className="nav-btn" onClick={showNavbar}>
         <FaBars />
       </button>
     </header>

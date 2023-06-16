@@ -1,0 +1,9 @@
+.threedslider{
+    height: auto;
+    margin-top: 7rem;
+    margin-bottom: 5rem
+}
+
+.carousel-container .react-3d-carousel-arrow {
+    display: none;
+  }

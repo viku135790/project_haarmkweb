@@ -1,8 +1,10 @@
 import React from 'react'
-
+import Navbar from '../allcomponents/reusable_componants/Navbar'
 const Services = () => {
   return (
-    <div>Services</div>
+    <div className='service-main-container'>
+      <Navbar />
+    </div>
   )
 }
 
