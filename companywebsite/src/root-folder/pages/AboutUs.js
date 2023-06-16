@@ -1,8 +1,13 @@
 import React from 'react'
+import TeamMembers from '../allcomponents/about/TeamMembers'
+import Navbar from '../allcomponents/reusable_componants/Navbar'
 
 const AboutUs = () => {
   return (
-    <div>AboutUs</div>
+    <>
+      <Navbar />
+      <TeamMembers />
+    </>
   )
 }
 
